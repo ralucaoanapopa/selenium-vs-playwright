@@ -1,4 +1,5 @@
 import pytest
+from time import sleep
 from selenium.webdriver import Chrome
 from pages.base import BasePage
 from pages.login import LoginPage
@@ -27,3 +28,7 @@ def test_login_valid_credentials(browser, setup):
     assert login.get_username().is_displayed() is True
     assert login.get_password().is_displayed() is True
     assert login.get_login_btn().is_displayed() is True
+
+    login.login_form(base.user_name, base.user_pass)
+    sleep(2)
+    assert browser.current_url == base.profile_URL
