@@ -22,8 +22,10 @@ def setup(browser):
 
 def test_login_valid_credentials(browser, setup):
     assert browser.title == base.title
+
     login = LoginPage(browser)
     login.load()
+    
     assert browser.current_url == base.login_URL
     assert login.get_username().is_displayed() is True
     assert login.get_password().is_displayed() is True

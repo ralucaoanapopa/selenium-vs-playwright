@@ -39,11 +39,15 @@ pip install -r requirements.txt
 
 ## Playwright
 
+5. Install the most recent web drivers:
 
+```
+playwright install
+```
 # Run tests
 
 ```
-pytest
+pytest -v
 ```
 
 See the list of tests:
