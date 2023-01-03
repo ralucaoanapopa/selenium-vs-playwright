@@ -57,7 +57,8 @@ pytest --collect-only
 
 # Tools
 
-- [Pytest framework](https://docs.pytest.org/en/6.2.x/#)
+- [Pytest framework](https://docs.pytest.org/en/7.1.x/contents.html)
 - [Selenium](https://selenium-python.readthedocs.io/index.html)
 - [Playwright](https://playwright.dev/python/docs/intro)
+- [Playwright Pytest plugin](https://playwright.dev/python/docs/test-runners)
 
